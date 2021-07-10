@@ -11,7 +11,10 @@ if(!file.exists(paste(filename, ".txt", sep = ""))) {
 
 # Read in data
 library(readr)
-hpc <- read_delim(txt.filename, delim = ";", col_types = "ctddddddd", na = "?")
+hpc <- read_delim(paste(filename, ".txt", sep = ""),
+                  delim = ";",
+                  col_types = "ctddddddd",
+                  na = "?")
 
 library(dplyr)
 hpc <- hpc %>%
