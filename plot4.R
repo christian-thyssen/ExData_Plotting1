@@ -55,7 +55,8 @@ with(hpc, points(datetime,
 legend("topright",
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
        col = c("black", "red", "blue"),
-       lwd = 1)
+       lwd = 1,
+       bty = "n")
 
 # Draw bottom right plot
 with(hpc, plot(datetime,
